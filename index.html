@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunkin' Donuts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-pink-500 text-white shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold">Dunkin' Donuts</div>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:text-pink-300 transition-all">Home</a>
+        <a href="#menu" class="hover:text-pink-300 transition-all">Menu</a>
+        <a href="#contact" class="hover:text-pink-300 transition-all">Contact</a>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="text-white">
+          ☰
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-pink-500 text-white space-y-4 py-4 px-6">
+      <a href="#" class="block hover:text-pink-300 transition-all">Home</a>
+      <a href="#menu" class="block hover:text-pink-300 transition-all">Menu</a>
+      <a href="#contact" class="block hover:text-pink-300 transition-all">Contact</a>
+    </div>
+  </header>
+
+ <!-- Hero Section -->
+<section id="hero-slider" class="h-screen bg-cover bg-center relative">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="flex items-center justify-center h-full container mx-auto text-center text-white relative z-10">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-bold animate__animated animate__fadeIn animate__delay-1s">Welcome to Dunkin' Donuts</h1>
+        <p class="text-lg sm:text-xl mt-4 animate__animated animate__fadeIn animate__delay-2s">The best donuts and coffee in town!</p>
+        <a href="#menu" class="mt-6 inline-block px-6 py-3 bg-pink-600 text-white rounded-full text-lg hover:bg-pink-700 transition-all">Explore Menu</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Breakfast Deals</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-639814b7639cb.png" alt="Donut 1" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Eggs & Cheese Sandwich & Coffee</p>
+              <h3 class="text-xl font-semibold">RS.700</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white  shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-6398159a245da.png" alt="Donut 2" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Donut & Tea</p>
+              <h3 class="text-xl font-semibold">RS.400</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-639814e7e42ae.png" alt="Donut 3" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Omwich Sandwich & Coffee</p>
+              <h3 class="text-xl font-semibold">RS.750</h3>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="menu" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Donuts</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-63981ad50f1ad.png" alt="Donut 1" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Single Donut</p>
+              <h3 class="text-xl font-semibold">RS.300</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-63981ccead55b.png" alt="Donut 2" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Dozen Donuts</p>
+              <h3 class="text-xl font-semibold">RS.3100</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-13-63981d1f5b9e4.png" alt="Donut 3" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Premium Line Donut</p>
+              <h3 class="text-xl font-semibold">RS.350</h3>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <section id="menu" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl  font-bold mb-8">Ice-Cream Donuts</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-30-63aeb86c78feb.png" alt="Donut 1" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Alamod</p>
+              <h3 class="text-xl font-semibold">RS.380</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-30-63aeb899d9b99.png" alt="Donut 2" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Iceberg</p>
+              <h3 class="text-xl font-semibold">RS.480</h3>
+            </div>
+          </div>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:border-4 hover:border-orange-500">
+          <div class="flex justify-center items-center h-full">
+            <img src="https://dunkindonuts.com.pk/storage/product/2022-12-30-63aec52a3a349.png" alt="Donut 3" class="w-56 h-40 object-contain transition-transform duration-500 hover:scale-110">
+            <div class="p-4">
+              <p class="text-gray-600 mt-2">Double Scope Ice-cream</p>
+              <h3 class="text-xl font-semibold">RS.290</h3>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-pink-500 text-white text-center">
+    <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+    <p class="text-xl mb-4">Have any questions? Get in touch with us!</p>
+    <a href="mailto:contact@dunkindonuts.com" class="inline-block bg-white text-pink-500 py-2 px-6 rounded-full hover:bg-gray-200 transition-all">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-800 text-white py-6 text-center">
+    <p>&copy; 2025 Dunkin' Donuts - All rights reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+  <script src="script.js"></script>
+</body>
+</html>
